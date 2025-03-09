@@ -1,0 +1,56 @@
+/* ---------------------------- URBANIST AND OSWALD FONT ------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: urbanist;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.headings {
+  font-family: Oswald;
+}
+/* ------------------------------- VARIABLES --------------------------- */
+:root {
+  /* =>Glassmorphism */
+  --glass-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  --glass-bg-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --glass-bg-border: 1px solid rgba(255, 255, 255, 0.3);
+  /* \\\\\\\\\\\ */
+}
+
+/* -------------------\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\----------------------- */
+
+/* ----------------------------- HEADER SECTION START ---------------------- */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  background: var(--glass-bg);
+  box-shadow: var(--glass-bg-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: var(--glass-bg-shadow);
+}
+nav h1 {
+  letter-spacing: 2.5px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-around;
+}
